@@ -1,0 +1,14 @@
+.env
+.env.dev
+.env.sandbox
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
+dist/
+.venv/
+venv/
+*.egg-info/
+.DS_Store
+data/
+.claude/

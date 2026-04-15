@@ -1,0 +1,47 @@
+# Web framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.12
+
+# Database
+sqlalchemy[asyncio]==2.0.36
+asyncpg==0.30.0
+alembic==1.14.0
+
+# Auth
+python-jose[cryptography]==3.3.0
+bcrypt==4.2.0
+python-dotenv==1.0.1
+pydantic-settings==2.6.1
+pydantic[email]==2.10.2
+
+# Encryption
+cryptography==43.0.3
+
+# Redis
+redis==5.2.1
+
+# AI
+anthropic==0.39.0
+openai==1.57.2
+tiktoken==0.8.0
+
+# Knowledge / parsing
+pypdf==5.1.0
+gitpython==3.1.43
+
+# MySQL connector
+aiomysql==0.2.0
+PyMySQL==1.1.1
+
+# Elasticsearch
+elasticsearch[async]==8.17.0
+
+# HTTP client
+httpx==0.27.2
+
+# Utilities
+aiofiles==24.1.0
+
+# Sandbox container management
+aiodocker==0.22.2

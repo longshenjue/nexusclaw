@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 14% 10%;
+    --foreground: 210 20% 92%;
+    --card: 222 14% 13%;
+    --card-foreground: 210 20% 92%;
+    --border: 215 14% 20%;
+    --input: 215 14% 20%;
+    --ring: 263 70% 60%;
+    --primary: 263 70% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 14% 18%;
+    --secondary-foreground: 210 20% 80%;
+    --muted: 215 14% 16%;
+    --muted-foreground: 215 14% 55%;
+    --accent: 215 14% 20%;
+    --accent-foreground: 210 20% 92%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --radius: 0.5rem;
+    --sidebar: 222 14% 8%;
+    --sidebar-foreground: 210 20% 80%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 3px; }
+}
+
+.streaming-cursor::after {
+  content: '▋';
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+/* markdown table row hover — too subtle for Tailwind's built-in opacity steps */
+.hover\:bg-white\/3:hover { background-color: rgba(255,255,255,0.03); }
+
+/* markdown ol li — override the flex layout for ordered list items */
+.markdown-ol li {
+  display: list-item;
+  list-style-type: decimal;
+  margin-left: 1.25rem;
+}
+
