@@ -2,7 +2,6 @@
 
 An open-source, self-hosted AI agent platform that connects your team's AI assistant to real data sources — databases, logs, code repositories, and a Python sandbox — through a familiar chat interface.
 
-![NexusClaw Chat Interface]
 ![](README_files/1.jpg)
 ## Features
 
